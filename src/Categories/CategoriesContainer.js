@@ -46,7 +46,8 @@ const cardStyle = {
     alignItems: 'space-between',
     flexFlow: 'row wrap',
     justifyContent: 'space-around',
-    flexWrap: 'wrap'
+    alignItems: 'flex-end',
+    flexWrap: 'wrap',
 }
 
 export default CategoriesContainer

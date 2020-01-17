@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Restaurants from './Restaurants'
+//import MapContainer from '../Map/MapContainer'
 
 class RestaurantsContainer extends Component {
     state = {
@@ -27,7 +28,10 @@ class RestaurantsContainer extends Component {
 
     render() {
         return(
-            <div>
+            <div style={flex}>
+                {/* <MapContainer 
+                    restaurants = {this.state.restaurants}
+                /> */}
                 <Restaurants
                     restaurants = { this.state.restaurants }
                 />
@@ -35,6 +39,11 @@ class RestaurantsContainer extends Component {
         )
     }
 }
+
+const flex = {
+    display: 'flexbox'
+}
+
 
 
 export default RestaurantsContainer

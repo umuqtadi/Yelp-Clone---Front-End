@@ -8,13 +8,20 @@ import Header from './components/Header'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style= { app } >
       <Header />
       <TopContainer />
       <CategoriesContainer />
       <RestaurantsContainer />
+      <footer>
+        Made by us for us
+      </footer>
     </div>
   );
+}
+
+const app = {
+  backgroundColor: '#686666'
 }
 
 export default App;

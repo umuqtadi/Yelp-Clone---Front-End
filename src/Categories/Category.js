@@ -25,7 +25,7 @@ const imageWrap = {
     width: '100%',
     overflow: 'hidden',
     objectFit: 'cover',
-    maxHeight: '200px'
+    maxHeight: '150px'
 }
 
 
