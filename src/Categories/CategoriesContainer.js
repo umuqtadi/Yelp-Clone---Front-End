@@ -18,7 +18,7 @@ class CategoriesContainer extends Component {
             {
                 image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60',
                 type: 'Pakistani',
-                description: 'THE BEST FUCKING FOOD OF ALL TIME MUTHA FUCKAS'
+                description: 'Damn. That shit good as hell'
             },
             {
                 image: 'https://images.unsplash.com/photo-1530469912745-a215c6b256ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60',
@@ -43,7 +43,6 @@ const cardStyle = {
     display: 'flex',
     padding: '5px',
     margin: '5px',
-    alignItems: 'space-between',
     flexFlow: 'row wrap',
     justifyContent: 'space-around',
     alignItems: 'flex-end',

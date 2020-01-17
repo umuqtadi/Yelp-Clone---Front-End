@@ -12,7 +12,7 @@ class Restaurant extends Component {
                     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                 </head>
                 <div className='item' style={ item }>
-                    <img src={restaurant.image} style={ resImg }/>
+                    <img src={restaurant.image} style={ resImg } alt='a restaurant' />
                 </div>
                 <div className='item' style={item}>
                     <p>Name: { restaurant.name } </p>

@@ -25,7 +25,6 @@ class TopContainer extends Component {
                     <img
                         className="d-block w-100"
                         style = {carouselImg}
-                        className="carousel-img"
                         src="https://images.pexels.com/photos/277253/pexels-photo-277253.jpeg?cs=srgb&dl=anise-aroma-art-bazaar-277253.jpg&fm=jpg"
                         alt="Second slide"
                     />
@@ -39,7 +38,6 @@ class TopContainer extends Component {
                     <img
                         className="d-block w-100"
                         style = {carouselImg}
-                        className="carousel-img"
                         src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
                         alt="Third slide"
                     />
