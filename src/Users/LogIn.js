@@ -9,7 +9,7 @@ class Login extends Component {
     onSubmit = (e) => {
         e.preventDefault();
 
-        
+        //Would have function to log in user upon submitting this resume
 
     }
 
@@ -37,10 +37,21 @@ class Login extends Component {
                         value={ this.state.password }
                         onChange={ this.onChange }
                     />
+                    <button type='submit' style={btnStyle}>Save</button>
                 </form>
             </div>
         )
     }
+}
+
+
+const btnStyle = {
+    background: 'black',
+    color: '#fff',
+    border: 'none',
+    padding: '5px 10px',
+    borderRadius: '50%',
+    cursor: 'pointer',
 }
 
 export default Login

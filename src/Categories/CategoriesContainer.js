@@ -30,13 +30,21 @@ class CategoriesContainer extends Component {
 
     render(){
         return(
-            <div style={ cardStyle }>
-                <Categories 
-                    categories = { this.state.categories }
-                />
+            <div style={mainStyle}>
+                <h1>Categories based on Type of Food:</h1>
+                <div style={ cardStyle }>
+                    <Categories 
+                        categories = { this.state.categories }
+                    />
+                </div>
             </div>
         )
     }
+}
+
+const mainStyle = {
+    textAlign: 'center',
+    margin: '5px'
 }
 
 const cardStyle = {

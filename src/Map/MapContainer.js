@@ -3,24 +3,25 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
 
 class MapContainer extends Component {
     render(){
+        // let mapMarker = this.props.restaurants.map((restaurant, index) => {
+        //     return <Marker 
+        //         key={index} 
+        //         id={index} 
+        //         position={{
+        //             lat: restaurant.lat,
+        //             lng: restaurant.lon
+        //             }}
+        //         onClick={() => console.log(`You clicked ${restaurant.name}`)}/>
+        // })
         return(
             <div>
-                <Map
-                    google={this.props.google}
-                    zoom={8}
-                    style={mapStyles}
-                    initialCenter={{lat: 37.78, lng: -122.44}}
-                >
-                    {/* {restaurants.map((location, index) => {
-                            return <Marker 
-                                key={index} 
-                                id={index} 
-                                position={{
-                                    lat: restaurants.lat,
-                                    lng: restaurants.lon
-                                    }}
-                                onClick={() => console.log(`You clicked ${location.restaurants.title}`)}/>
-                        })} */}
+            <Map 
+                google = {this.props.google}
+                zoom = {8}
+                style={mapStyles}
+                initialCenter={{lat: 37.78, lng: -122.44}}
+            >
+                    {/* {mapMarker} */}
                 </Map> 
             </div>
         )
