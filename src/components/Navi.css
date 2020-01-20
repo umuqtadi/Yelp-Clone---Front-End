@@ -33,10 +33,9 @@ header {
   /* position: fixed; */
   z-index: 999;
   width: 100%;
+  border-bottom: #000;
 }
 
-/* changed this from the tutorial video to
-   allow it to gain focus, making it tabbable */
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;

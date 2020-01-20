@@ -86,7 +86,7 @@ const mapStyle = {
     top: '50%', 
     left: '50%', 
     marginTop: '10px', 
-    marginLeft: '-100px', 
+    marginLeft: '-400px', 
 }
 
 export default TopContainer
