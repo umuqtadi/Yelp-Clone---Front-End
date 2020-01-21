@@ -81,7 +81,7 @@ const lightPic = {
 
 const mapStyle = { 
     width: '100%', 
-    height:'500px',
+    height:'1000px',
     position: 'relative', 
     top: '50%', 
     left: '50%', 

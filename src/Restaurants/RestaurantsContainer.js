@@ -52,7 +52,7 @@ class RestaurantsContainer extends Component {
                         restaurants = { this.state.restaurants }
                     />
                 </div>
-                <div style = {mapStyle} >
+                <div style = {mapStyle}>
                     <MapContainer
                         restaurants = { this.state.restaurants }
                     />

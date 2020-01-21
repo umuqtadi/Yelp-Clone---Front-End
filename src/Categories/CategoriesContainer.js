@@ -75,6 +75,7 @@ const cardStyle = {
     justifyContent: 'space-around',
     alignItems: 'flex-end',
     flexWrap: 'wrap',
+    marginTop: '10px'
 }
 
 export default CategoriesContainer

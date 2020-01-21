@@ -25,7 +25,6 @@ body {
   place-items: center;
 }
 
-/* navigation styles start here */
 
 header {
   background: var(--background);
@@ -33,7 +32,7 @@ header {
   /* position: fixed; */
   z-index: 999;
   width: 100%;
-  border-bottom: #000;
+  /* border-bottom: #000; */
 }
 
 .nav-toggle {
@@ -141,9 +140,8 @@ nav a:hover {
   }
   
   nav {
-    all: unset; /* this causes issues with Edge, since it's unsupported */
+    all: unset;
     
-    /* the following lines are not from my video, but add Edge support */
     position: relative;
     text-align: left;
     transition: none;
@@ -151,7 +149,6 @@ nav a:hover {
     background: none;
     top: initial;
     left: initial;
-    /* end Edge support stuff */
     
     grid-column: 3 / 4;
     display: flex;
