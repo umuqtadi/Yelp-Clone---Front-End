@@ -55,9 +55,9 @@ class TopContainer extends Component {
                 <div>
                     <CategoriesContainer />
                 </div>
-                <div style={mapStyle}  >
+                {/* <div style={mapStyle}>
                     <MapContainer />
-                </div>
+                </div> */}
             </div>
         )
     }
@@ -80,13 +80,7 @@ const lightPic = {
 }
 
 const mapStyle = { 
-    width: '100%', 
-    height:'1000px',
-    position: 'relative', 
-    top: '50%', 
-    left: '50%', 
-    marginTop: '10px', 
-    marginLeft: '-400px', 
+
 }
 
 export default TopContainer

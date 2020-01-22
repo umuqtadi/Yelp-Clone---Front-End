@@ -1,8 +1,38 @@
 import React, { Component } from 'react'
 import './Restaurants.css'
+import axios from 'axios'
+import Comments from './Comments'
+import { Link } from 'react-router-dom'
 
 
 class Restaurant extends Component {
+
+    state = {
+        comment: '',
+    }
+
+    // componentDidMount(restaurantId)  {
+    //     axios.get(`http://localhost:8000/api/comments/${restaurantId}`)
+    //         .then(res => this.setState({comments: res.data}))
+    // }
+
+    addComment = (comment, restaurantId) => {
+        axios.post(`http://localhost:8000/api/comments/${ restaurantId }`, {
+            comment
+        })
+        .then(res => this.setState({comments: res.data}))
+    }
+
+    onSubmit = (e) => {
+        e.preventDefault()
+
+        this.addComment(this.state.comment, this.props.restaurant.restaurantId)
+
+        this.setState({comment: ''})
+
+    }
+
+    onChange = (e) => this.setState({ [e.target.name]: e.target.value })
  
     render(){
         const restaurant = this.props.restaurant
@@ -42,8 +72,23 @@ class Restaurant extends Component {
                                 <i className="active fa fa-star" aria-hidden="true"></i>
                         </label>
                     </div>
-
-                    <textarea rows="4" cols="30" name="comment" form="usrform"> Enter Comment Here</textarea>
+                    <form onSubmit={this.onSubmit}>
+                        <input
+                            type='text' 
+                            name='comment' 
+                            style={{flex: '10', padding: '5px'}}
+                            placeholder='Add Comment here...'
+                            value={ this.state.comment }
+                            onChange={ this.onChange }
+                            restaurantId={restaurant.restaurantId}
+                            />
+                    </form>
+                </div>
+                <div>
+                    <nav>
+                        <Link to='/comments'>Comments</Link>
+                    </nav>
+                    <Comments restaurant={restaurant} />
                 </div>
           </div>
         )

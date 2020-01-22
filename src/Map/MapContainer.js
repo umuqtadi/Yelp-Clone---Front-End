@@ -3,16 +3,16 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
 
 class MapContainer extends Component {
     render(){
-        // let mapMarker = this.props.restaurants.map((restaurant, index) => {
-        //     return <Marker 
-        //         key={index} 
-        //         id={index} 
-        //         position={{
-        //             lat: restaurant.lat,
-        //             lng: restaurant.lon
-        //             }}
-        //         onClick={() => console.log(`You clicked ${restaurant.name}`)}/>
-        // })
+        let mapMarker = this.props.restaurants.map((restaurant, index) => {
+            return <Marker 
+                key={index} 
+                id={index} 
+                position={{
+                    lat: restaurant.lat,
+                    lng: restaurant.lon
+                    }}
+                onClick={() => console.log(`You clicked ${restaurant.name}`)}/>
+        })
         return(
             <div>
             <Map 
@@ -21,7 +21,7 @@ class MapContainer extends Component {
                 style={mapStyles}
                 initialCenter={{lat: 37.78, lng: -122.44}}
             >
-                    {/* {mapMarker} */}
+                    {mapMarker}
                 </Map> 
             </div>
         )

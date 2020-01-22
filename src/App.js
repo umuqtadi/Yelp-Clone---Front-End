@@ -7,6 +7,7 @@ import CategoriesContainer from './Categories/CategoriesContainer';
 import Navi from './components/Navi';
 import { Switch, Route } from 'react-router-dom';
 import UsersContainer from './Users/UsersContainer';
+import Comments from './Restaurants/Comments'
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
           <Route path='/restaurants' component={RestaurantsContainer}/>
           <Route path='/categories' component={CategoriesContainer}/>
           <Route path='/login' component={UsersContainer} />
+          <Route path='/comments' component={Comments} />
       </Switch>
-      
+
       <footer>
         By us for us
       </footer>
