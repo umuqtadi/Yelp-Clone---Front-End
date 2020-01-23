@@ -19,7 +19,16 @@ function App() {
           <Route path='/restaurants' component={RestaurantsContainer}/>
           <Route path='/categories' component={CategoriesContainer}/>
           <Route path='/login' component={UsersContainer} />
-          <Route path='/comments' component={Comments} />
+          <Route path='/restaurant/:id' render={
+            (routeComponentProps) => {
+              return (
+                <div>
+                  {/* <SingleRestaurant /> */}
+                  <Comments restaurantId={routeComponentProps.match.params.id} {...routeComponentProps} />
+                </div>
+              )
+            }
+          } />
       </Switch>
 
       <footer>

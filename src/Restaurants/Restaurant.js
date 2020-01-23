@@ -85,10 +85,8 @@ class Restaurant extends Component {
                     </form>
                 </div>
                 <div>
-                    <nav>
-                        <Link to='/comments'>Comments</Link>
-                    </nav>
-                    <Comments restaurant={restaurant} />
+                    <Link to={`/restaurant/${restaurant.restaurantId}`}>Comments</Link>
+                    <Comments restaurant={restaurant.restaurantId} />
                 </div>
           </div>
         )

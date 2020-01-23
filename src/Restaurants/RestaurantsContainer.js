@@ -42,6 +42,7 @@ const mapStyle = {
     marginLeft: '-400px', 
 }
 
+
 const flex = {
     display: 'flexbox',
     marginTop: '10px',
