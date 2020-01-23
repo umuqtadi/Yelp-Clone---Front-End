@@ -5,7 +5,13 @@ import axios from 'axios'
 class Comments extends Component {
 
     state = {
-        comments: []
+        comments: [],
+        restaurants: []
+    }
+
+    componentDidMount(){
+        axios.get('http://localhost:8000/api/restaurants')
+            .then(res => this.setState({restaurants: res.data}))
     }
 
 

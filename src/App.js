@@ -25,7 +25,7 @@ function App() {
             (routeComponentProps) => {
               return (
                 <div>
-                  <Restaurant restaurant={routeComponentProps.location.pathname} />
+                  <Restaurant restaurant={routeComponentProps.location.pathname} {...routeComponentProps} />
                   <Comments restaurantId={routeComponentProps.match.params.id} {...routeComponentProps} />
                 </div>
               )
