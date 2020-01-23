@@ -17,20 +17,36 @@ class Comments extends Component {
 
     }
 
+    deleteComment = (id) => {
+        axios.delete(`http://localhost:8000/api/comments/${id}`)
+            .then(res => this.setState({comments: [...this.state.comments.filter(comment => comment.rowid !== id)]}))
+    }
+
+
     render(){
-        return(this.state.comments.map(
+        return(
+            this.state.comments.map(
             comment => (
                 <div style={commentStyle}>
                     <p>{comment.comment} </p>
+                    <button onClick={this.deleteComment.bind(this, comment.rowid)}>Delete</button>
                 </div>
+                )
             )
-        )
         )
     } 
 }
 
 const commentStyle = {
-    textAlign: 'center'
+    display: 'flexbox',
+    textAlign: 'center',
+    border: '5px solid black',
+    margin: '5px',
+    backgroundColor: 'white',
+    maxWidth: '500px',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column'
 }
 
 export default Comments

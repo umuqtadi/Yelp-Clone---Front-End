@@ -49,7 +49,7 @@ class Restaurant extends Component {
                     <p>Address: { restaurant.address } </p>
                     <p>Food Type: { restaurant.foodType }  </p>
                 </div>
-                <div style={item}>
+                <div style={item} >
                     <div className="star-rating">
                         <input id="star-5" type="radio" name="rating" value="star-5"/>
                         <label for="star-5" title="5 stars">
@@ -72,7 +72,7 @@ class Restaurant extends Component {
                                 <i className="active fa fa-star" aria-hidden="true"></i>
                         </label>
                     </div>
-                    <form onSubmit={this.onSubmit}>
+                    <form onSubmit ={this.onSubmit} >
                         <input
                             type='text' 
                             name='comment' 
@@ -86,7 +86,7 @@ class Restaurant extends Component {
                 </div>
                 <div>
                     <Link to={`/restaurant/${restaurant.restaurantId}`}>Comments</Link>
-                    <Comments restaurant={restaurant.restaurantId} />
+                    {/* <Comments restaurant={restaurant.restaurantId} /> */}
                 </div>
           </div>
         )

@@ -8,6 +8,8 @@ import Navi from './components/Navi';
 import { Switch, Route } from 'react-router-dom';
 import UsersContainer from './Users/UsersContainer';
 import Comments from './Restaurants/Comments'
+import Restaurant from './Restaurants/Restaurant'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
             (routeComponentProps) => {
               return (
                 <div>
-                  {/* <SingleRestaurant /> */}
+                  <Restaurant restaurant={routeComponentProps.location.pathname} />
                   <Comments restaurantId={routeComponentProps.match.params.id} {...routeComponentProps} />
                 </div>
               )
@@ -31,9 +33,7 @@ function App() {
           } />
       </Switch>
 
-      <footer>
-        By us for us
-      </footer>
+      <Footer />
     </div>
   );
 }
