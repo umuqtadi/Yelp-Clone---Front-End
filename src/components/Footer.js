@@ -5,9 +5,9 @@ class Footer extends Component {
     render(){
         return(
             <footer>
-                <section class="ft-main">
-                    <div class="ft-main-item">
-                    <h2 class="ft-title">About</h2>
+                <section className="ft-main">
+                    <div className="ft-main-item">
+                    <h2 className="ft-title">About</h2>
                     <ul>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Pricing</a></li>
@@ -15,23 +15,23 @@ class Footer extends Component {
                         <li><a href="#">Careers</a></li>
                     </ul>
                     </div>
-                    <div class="ft-main-item">
-                    <h2 class="ft-title">Resources</h2>
+                    <div className="ft-main-item">
+                    <h2 className="ft-title">Resources</h2>
                     <ul>
                         <li><a href="#">Docs</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                     </div>
-                    <div class="ft-main-item">
-                    <h2 class="ft-title">Contact</h2>
+                    <div className="ft-main-item">
+                    <h2 className="ft-title">Contact</h2>
                     <ul>
                         <li><a href="#">Help</a></li>
                         <li><a href="#">Sales</a></li>
                         <li><a href="#">Advertise</a></li>
                     </ul>
                     </div>
-                    <div class="ft-main-item">
-                    <h2 class="ft-title">Stay Updated</h2>
+                    <div className="ft-main-item">
+                    <h2 className="ft-title">Stay Updated</h2>
                     <p>Subscribe to our newsletter to get our latest news.</p>
                     <form>
                         <input type="email" name="email" placeholder="Enter email address"/>
@@ -40,19 +40,19 @@ class Footer extends Component {
                     </div>
                 </section>
 
-                <section class="ft-social">
-                    <ul class="ft-social-list">
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-github"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <section className="ft-social">
+                    <ul className="ft-social-list">
+                    <li><a href="#"><i className="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i className="fab fa-github"></i></a></li>
+                    <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                 </section>
 
-                <section class="ft-legal">
-                    <ul class="ft-legal-list">
+                <section className="ft-legal">
+                    <ul className="ft-legal-list">
                     <li><a href="#">Terms &amp; Conditions</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li>&copy; 2020 Umar B inc.</li>
